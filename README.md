@@ -10,14 +10,14 @@ The Laravel Workflow Jobs package allows you to effortlessly create workflows th
    ```
 
 2. Publish the config file:
-   \```
+   ```
    php artisan vendor:publish --provider="Workflow\WorkflowServiceProvider"
-   \```
+   ```
 
 3. Run migrations (if needed) to set up the required tables for logging and management:
-   \```
+   ```
    php artisan migrate
-   \```
+   ```
 
 ## Usage
 
@@ -25,7 +25,7 @@ The Laravel Workflow Jobs package allows you to effortlessly create workflows th
 
 To create a workflow, you can define it as shown in the example:
 
-\```php
+```php
 namespace  App\Workflow;
 
 use App\Jobs\WorkflowStepJob;
@@ -44,13 +44,13 @@ class ExampleWorkflow extends Workflow {
         $this->addLogic("step1", "step2");
     }
 }
-\```
+```
 
 ### Running a Workflow
 
 After defining your workflow, you can start and fetch its JSON representation:
 
-\```php
+```php
 $workflow = new ExampleWorkflow();
 $workflow->start("Hello Test");
 $workflowjson = $workflow->getJson();
