@@ -1,6 +1,7 @@
 {
-    "name": "nowis/workflow",
+    "name": "nowi5/laravel-workflow",
     "description": "Workflow Engine for Laravel",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Workflow\\": "src/"
